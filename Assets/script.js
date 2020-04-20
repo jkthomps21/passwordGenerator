@@ -16,7 +16,8 @@ function writePassword() {
   function generatePassword() {
     
     var passLength = Number(prompt("Please enter the length of your password (min 8 character and max 128 characters)."));
-
+    
+    // If-else to validate user input
     if (!passLength) {
       alert("This needs to be a value!");
       passLength = Number(prompt("Please enter a value between 8 and 128."));
